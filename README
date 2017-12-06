@@ -1,0 +1,15 @@
+Use 'make' to compile, and 'make clean' to delete object files.
+
+ppp stands for process-per-protocol, ppm stands for process-per-message.
+
+'./ppm' or './ppp' to run one host.
+
+After run each host, type in the port number of the other host as printed on the screen.
+
+Since we need to type the port number for each host, so each host start sending and receiving at different time.
+
+We record the time each host sending the first message and receive the last message. 
+
+So time from host 1 send its first message to host 2 receive the last message is endTime(host2)-startTime(host1)
+
+After we measure the time, the performance of ppp and ppm is similar, almost the same, don't have much difference.
